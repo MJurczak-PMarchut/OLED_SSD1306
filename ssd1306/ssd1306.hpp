@@ -10,9 +10,8 @@
 
 #include <stddef.h>
 #include <_ansi.h>
-
 _BEGIN_STD_C
-
+#include "CommManager.hpp"
 #include "ssd1306_conf.h"
 
 
@@ -56,7 +55,7 @@ _BEGIN_STD_C
 #define SSD1306_X_OFFSET_UPPER 0
 #endif
 
-#include "ssd1306_fonts.h"
+#include <Oled/ssd1306/ssd1306_fonts.hpp>
 
 /* vvv I2C config vvv */
 

@@ -1,5 +1,5 @@
-#include "ssd1306.h"
 #include <math.h>
+#include <Oled/ssd1306/ssd1306.hpp>
 #include <stdlib.h>
 #include <string.h>  // For memcpy
 
@@ -8,6 +8,8 @@
 void ssd1306_Reset(void) {
     /* for I2C - do nothing */
 }
+
+extern CommManager MainCommManager;
 
 // Send a byte to the command register
 void ssd1306_WriteCommand(uint8_t byte) {
