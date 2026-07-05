@@ -10,8 +10,8 @@
 
 #include <stddef.h>
 #include <_ansi.h>
-_BEGIN_STD_C
 #include "CommManager.hpp"
+_BEGIN_STD_C
 #include "ssd1306_conf.h"
 
 
