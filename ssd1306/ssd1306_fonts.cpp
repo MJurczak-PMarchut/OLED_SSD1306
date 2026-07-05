@@ -1,5 +1,8 @@
 
 #include <Oled/ssd1306/ssd1306_fonts.hpp>
+#include "RobotSpecificDefines.hpp"
+
+#ifdef USES_OLED
 
 #ifdef SSD1306_INCLUDE_FONT_7x10
 static const uint16_t Font7x10 [] = {
@@ -618,3 +621,5 @@ FontDef Font_16x26 = {16,26,Font16x26};
 #ifdef SSD1306_INCLUDE_FONT_16x24
 FontDef Font_16x24 = {16,24,Font16x24};
 #endif
+
+#endif // USES_OLED

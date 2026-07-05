@@ -2,6 +2,9 @@
 #include <Oled/ssd1306/ssd1306.hpp>
 #include <stdlib.h>
 #include <string.h>  // For memcpy
+#include "RobotSpecificDefines.hpp"
+
+#ifdef USES_OLED
 
 #if defined(SSD1306_USE_I2C)
 
@@ -561,3 +564,5 @@ void ssd1306_SetDisplayOn(const uint8_t on) {
 uint8_t ssd1306_GetDisplayOn() {
     return SSD1306.DisplayOn;
 }
+
+#endif // USES_OLED
